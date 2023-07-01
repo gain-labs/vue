@@ -11,6 +11,7 @@
 
   <Container_ :data="data" :step="step" />
   <button @click="more">더보기</button>
+  <h4>Hi {{ $store.state.name }}</h4>
   <div class="footer">
     <ul class="footer-button-plus">
       <input type="file" id="file" class="inputfile" />
