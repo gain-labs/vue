@@ -12,6 +12,9 @@
   <Container_ :data="data" :step="step" />
   <button @click="more">더보기</button>
   <h4>Hi {{ $store.state.name }}</h4>
+  <button @click="$store.commit('이름변경')">버튼</button>
+  <p>{{ $store.state.age }}</p>
+  <button @click="$store.commit('나이변경')">나이 변경</button>
   <div class="footer">
     <ul class="footer-button-plus">
       <input type="file" id="file" class="inputfile" />
